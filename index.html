@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+    </head>
+    <body>
+        <div class = "navbar navbar-inverse navbar-static-top">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Dash AI</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="bg-info text-white">
+                <h1>Dash AI</h1>
+                <p>Finding quality prompts has become a new and growing issue in generative AI.</p>
+                <p>Dash AI solves this by curating a database of quality prompts to search and view cached outputs.</p>
+                <hr>
+            </div>
+            <div>
+                <form action="javascript:search()">
+                    <div class="form-group">
+                        <input id="prompt-in" type="text" class="form-control" placeholder="Enter prompt">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-default">Search for Prompt</button>
+                    </div>
+                </form>
+            </div>
+            <table class="table">
+                <tr>
+                    <td>Prompt That Has Been Tested For Quality:</td>
+                    <td id="prompt-out"></td>
+                </tr>
+            </table>
+        </div>
+				
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src = "js/prompt.js"></script>
+        <script src = "js/bootstrap.js"></script>
+    </body>
+</HTML>
